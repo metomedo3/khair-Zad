@@ -1,49 +1,123 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>خير زاد</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خير زاد</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(to right, #004d00, #009933);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #004d00;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .product {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      margin-left: 15px;
+    }
+    .product p {
+      font-size: 16px;
+      margin: 0;
+    }
+    .payment-form, .subscribe {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #009933;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #007a29;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>خير زاد</h1>
-        <p>منتجات طبيعية وصحية</p>
-        <p>للتواصل: 01005240052 - 01112948606</p>
-    </header>
-    <main>
-        <section>
-            <h2>السريد</h2>
-            <div class="product"><img src="https://i.imgur.com/WsEufjH.jpg"><p>سريد بالسمسم - 100 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/VtL7aDH.jpg"><p>سريد تمر بالمكسرات - 120 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/86nYYdW.jpg"><p>سريد السوداني - 120 جنيه</p></div>
-        </section>
-        <section>
-            <h2>سناكس</h2>
-            <div class="product"><img src="https://i.imgur.com/LdxzTTP.jpg"><p>جرانولا بار بالمكسرات - 60 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/1F1mL3f.jpg"><p>كرات طاقة بالمكسرات - 55 جنيه</p></div>
-        </section>
-        <section>
-            <h2>المخبوزات</h2>
-            <div class="product"><img src="https://i.imgur.com/d2CkCwT.jpg"><p>مقرمشات الشعير - 95 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/8NlEMqW.jpg"><p>خبز الشعير - 70 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/zbtDCW4.jpg"><p>ميني سادة - 120 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/TN2SVTy.jpg"><p>بقسماط الشعير - 70 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/PHB9Cmz.jpg"><p>ميني عجوة - 120 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/KW3ZQBK.jpg"><p>كب كيك الشعير بالمكسرات - 40 جنيه</p></div>
-        </section>
-        <section>
-            <h2>خالي من الجلوتين</h2>
-            <div class="product"><img src="https://i.imgur.com/Tnqt9Ar.jpg"><p>بقسماط خالي من الجلوتين - 120 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/NqMoWl4.jpg"><p>خبز خالي من الجلوتين - 70 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/SXm7j8s.jpg"><p>بيتي فور خالي من الجلوتين - 170 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/JjGQURj.jpg"><p>كحك خالي من الجلوتين - 170 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/qxD8GVR.jpg"><p>مقرمشات خالية من الجلوتين - 120 جنيه</p></div>
-            <div class="product"><img src="https://i.imgur.com/NzUR4gB.jpg"><p>بسكويت خالي من الجلوتين - 150 جنيه</p></div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 خير زاد - جميع الحقوق محفوظة</p>
-    </footer>
+
+  <header>
+    <h1>خير زاد</h1>
+    <p>منتجات طبيعية وصحية</p>
+    <p>للتواصل: 01005240052 - 01112948606</p>
+  </header>
+
+  <div class="container">
+
+    <h2>السبريد</h2>
+
+    <div class="product">
+      <img src="https://i.imgur.com/t1dZq8M.jpg" alt="سبريد بالفستق">
+      <p>سبريد بالفستق - 100 جنيه</p>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/3tYYQXc.jpg" alt="سبريد نوتيلا بالمكسرات">
+      <p>سبريد نوتيلا بالمكسرات - 120 جنيه</p>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/Y1a6Q1F.jpg" alt="سبريد السوداني">
+      <p>سبريد السوداني - 120 جنيه</p>
+    </div>
+
+    <h2>الدفع</h2>
+    <div class="payment-form">
+      <p>ادخل بياناتك للدفع:</p>
+      <input type="text" placeholder="الاسم على البطاقة">
+      <input type="number" placeholder="رقم البطاقة">
+      <input type="text" placeholder="تاريخ الانتهاء (MM/YY)">
+      <input type="number" placeholder="رمز CVV">
+      <button>ادفع الآن</button>
+    </div>
+
+    <h2>اشترك معنا</h2>
+    <div class="subscribe">
+      <p>سجل إيميلك ليصلك جديد العروض:</p>
+      <input type="email" placeholder="ادخل بريدك الإلكتروني">
+      <button>اشترك</button>
+    </div>
+
+  </div>
+
 </body>
 </html>
